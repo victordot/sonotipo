@@ -1,5 +1,5 @@
 // components/Card.tsx
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -7,7 +7,7 @@ import { FC } from "react";
 // Define una interfaz para las props
 interface CardProps {
   title: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   description: string;
   link: string;
 }

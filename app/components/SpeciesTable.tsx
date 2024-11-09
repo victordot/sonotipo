@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
 
@@ -9,7 +9,7 @@ interface SpeciesTableProps {
   cientificName: string;
   habitat: string;
   tipo: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   link: string;
   details: string; // Información adicional
   audioLink: string; // Enlace a los audios de la especie
