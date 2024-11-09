@@ -1,4 +1,3 @@
-import { disconnect } from "process";
 import Image from "next/image";
 import Search from "../../public/assets/Search.svg"
 import Colombia from "../../public/assets/Colombia.svg"
