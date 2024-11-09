@@ -1,13 +1,11 @@
 // components/Card.tsx
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import { FC } from "react";
-
+import Link from "next/link";
 
 // Define una interfaz para las props
 interface CardProps {
   title: string;
-  imageSrc: StaticImageData;
+  imageSrc: string; // Cambié de StaticImageData a string para aceptar URLs de imágenes
   description: string;
   link: string;
 }
@@ -16,13 +14,13 @@ interface CardProps {
 export const Card: FC<CardProps> = ({ title, imageSrc, description, link }) => {
   return (
     <div className="max-w-sm mx-auto rounded overflow-hidden shadow-lg justify-center">
-      <Image
+      {/* Usamos <img> en lugar de <Image> */}
+      <img
         className="w-full"
-        src={imageSrc}
+        src={imageSrc} // Usa la ruta de la imagen directamente
         alt={title}
         width={400}
         height={250}
-        //placeholder="blur"
       />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
