@@ -27,7 +27,7 @@ export default function Home() {
     },
     {
       title: "Bosque",
-      imageSrc: "/assets/Bosque.jpeg",
+      imageSrc: "/assets/Bosque.svg",
       description: "El bosque colombiano es un ecosistema rico en biodiversidad que abarca diferentes tipos de vegetación, desde bosques húmedos tropicales hasta bosques andinos y secos. Estos bosques son el hogar de una gran variedad de flora y fauna, incluyendo especies endémicas y en peligro de extinción. En el bosque tropical, la densa vegetación se entrelaza para formar un hábitat ideal para aves, mamíferos, reptiles e insectos. Los bosques andinos, situados en las montañas, presentan una vegetación adaptada a las alturas y climas frescos.",
       link: "/accesssss",
     },
