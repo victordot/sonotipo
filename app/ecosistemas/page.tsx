@@ -5,7 +5,7 @@ import { Card } from "../components/Card";
 import Selva from "../../public/assets/selva.jpeg"
 import Paramo from "../../public/assets/Paramo.jpg"
 import Desierto from "../../public/assets/Desierto.jpg"
-import Bosque from "../../public/assets/Bosque.svg"
+import Bosque from "../../public/assets/Bosque.jpeg"
 import Manglar from "../../public/assets/Manglar.jpg"
 import Sabana from "../../public/assets/Sabana.jpg"
 
