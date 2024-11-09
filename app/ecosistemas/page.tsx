@@ -7,7 +7,7 @@ export default function Home() {
   const resources = [
     {
       title: "Selva",
-      imageSrc: "./assets/selva.jpeg",
+      imageSrc: "./selva.jpeg",
       description: "La selva colombiana es un ecosistema exuberante y diverso, caracterizado por una rica vegetación tropical y una fauna única. Ubicada principalmente en las regiones amazónica, chocoana y pacífica, estas selvas son hogar de una amplia variedad de especies de plantas, animales e insectos. El clima cálido y húmedo, junto con la abundante precipitación, favorece el crecimiento de bosques densos y la proliferación de vida silvestre.",
       link: "/accesssss",
     },
