@@ -32,7 +32,7 @@ export function Navbar() {
                 <div className="flex items-center">
                     <Link href={"/"}><Image src={Logo} alt="Logo" width={35} height={35}/></Link>
 
-                    <div className="hidden lg:flex pl-[74px] gap-x-[56]">
+                    <div className="hidden lg:flex pl-[74px] gap-x-[56px]">
                         <Link href={"/ecosistemas"} className="text-[#36485C] font-medium">Ecosistemas</Link>
                         <Link href={"/especies"} className="text-[#36485C] font-medium">Especies</Link>
                         <Link href={"/grabaciones"} className="text-[#36485C] font-medium">Grabaciones</Link>
