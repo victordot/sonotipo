@@ -8,7 +8,7 @@ export function Hero() {
     return(
         <div className="pt-4">
             <div className="px-[20px]">
-                <h1 className="text-center text-[32px] leading-[40px] font-medium text-[#172026]">
+                <h1 className="text-center text-[32px] leading-[40px] font-medium text-[#172026] lg:text-[40px]">
                     Sonotipos Bioacústicos:
                 </h1>
 
