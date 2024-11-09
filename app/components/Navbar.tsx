@@ -1,12 +1,33 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/assets/Logo.svg"
 import Profile from "../../public/assets/Profile.svg"
 import Menu from "../../public/assets/Menu.svg"
+import React, {useEffect, useState} from "react";
 
 export function Navbar() {
+        const [header, setHeader] = useState(false)
+
+        const scrollHeader = () => {
+            if(window.scrollY > 20) {
+                setHeader(true)
+            }
+            else {
+                setHeader(false)
+            }
+        }
+
+        useEffect(() => {
+            window.addEventListener("scroll", scrollHeader)
+
+            return () => {
+                window.addEventListener("scroll", scrollHeader) 
+            }
+        },[])
+
     return(
-        <nav>
+        <div className={header ? "fixed w-[100%] bg-[white]": "bg-[transparent]"}>
             <div className="flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-auto lg:px-20">
                 <div className="flex items-center">
                     <Link href={"/"}><Image src={Logo} alt="Logo" width={35} height={35}/></Link>
@@ -27,6 +48,6 @@ export function Navbar() {
                 <Image src={Menu} alt="Menu" width={32} height={32} className="lg:hidden"/>
                 </div>
             </div>
-        </nav>
+        </div>
     );
 }
