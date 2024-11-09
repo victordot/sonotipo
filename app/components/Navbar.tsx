@@ -43,11 +43,11 @@ export function Navbar() {
                 </div>
 
                 <div className="flex gap-x-5">
-                    <p className="hidden font-medium text-[#36485C] lg:block pr-[56px]">Registrarse</p>
+                    <Link href="/register" className="hidden font-medium text-[#36485C] lg:block pr-[56px]">Registrarse</Link>
 
                     <div className="flex items-center gap-x-2">
                         <Image src={Profile} alt="Profile" width={24} height={24}/>
-                        <span className="hidden font-medium text-[#36485C] lg:block">Login</span>
+                        <Link href="/login" className="hidden font-medium text-[#36485C] lg:block">Login</Link>
                     </div>
 
                     <button onClick={() => {
@@ -64,8 +64,8 @@ export function Navbar() {
                 <Link href={"/especies"} className="mt-1 text-white font-medium hover:text-[#FF9913]">Especies</Link>
                 <Link href={"/grabaciones"} className="mt-1 text-white font-medium hover:text-[#FF9913]">Grabaciones</Link>
 
-                <Link href={"/grabaciones"} className="mt-4 text-white font-medium hover:text-[#FF9913]">Registrarse</Link>
-                <Link href={"/grabaciones"} className="mt-1 text-white font-medium hover:text-[#FF9913]">Login</Link>
+                <Link href={"/register"} className="mt-4 text-white font-medium hover:text-[#FF9913]">Registrarse</Link>
+                <Link href={"/login"} className="mt-1 text-white font-medium hover:text-[#FF9913]">Login</Link>
             </div>
         </div>
     );
