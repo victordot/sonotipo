@@ -10,7 +10,6 @@ export default function Home() {
       habitat: "Selva",
       tipo: "Ave",
       imageSrc: "/assets/Guacamaya.webp",
-      link: "/species/jaguar",
       details: "La guacamaya es un ave grande y colorida, conocida por su vibrante plumaje y su inteligencia. Se caracteriza por su tamaño, que puede superar el metro de longitud, con una cola larga y colorida. Sus plumas presentan combinaciones de colores brillantes como rojo, azul, verde y amarillo, según la especie. Son frugívoras, alimentándose principalmente de frutas, nueces, semillas y flores.",
       audioLink: "",
     },
@@ -35,7 +34,7 @@ export default function Home() {
           </thead>
           <tbody>
             {species.map((speciesItem, index) => (
-              <SpeciesTable key={index} {...speciesItem} />
+              <SpeciesTable link={""} key={index} {...speciesItem} />
             ))}
           </tbody>
         </table>

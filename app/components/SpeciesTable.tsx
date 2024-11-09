@@ -21,7 +21,6 @@ export const SpeciesTable: FC<SpeciesTableProps> = ({
   habitat,
   tipo,
   imageSrc,
-  link,
   details,
   audioLink,
 }) => {

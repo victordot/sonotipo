@@ -5,3 +5,10 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// next.config.js
+module.exports = {
+  output: 'export',
+  // Otras configuraciones si las necesitas
+};
+
