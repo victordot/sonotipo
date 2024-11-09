@@ -8,6 +8,7 @@ import Desierto from "../../public/assets/Desierto.jpg"
 import Bosque from "../../public/assets/Bosque.jpeg"
 import Manglar from "../../public/assets/Manglar.jpg"
 import Sabana from "../../public/assets/Sabana.jpg"
+import { Footer } from "../components/Footer";
 
 // Importa las imágenes como rutas de la carpeta public
 // Asegúrate de que las imágenes estén en la carpeta `public/assets`
@@ -67,6 +68,7 @@ export default function Home() {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
