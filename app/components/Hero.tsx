@@ -46,8 +46,8 @@ export function Hero() {
                     </button>
                 </div>
 
-                <div className="relative flex h-full w-full justify-center pt-10">
-                    <div className="absolute flex-col items-center">
+                <div className="flex h-full w-full justify-center pt-10">
+                    <div className="flex-col items-center">
                         <Image src={Colombia} alt="Map"/>
 
                         <div className="flex w-full flex-col items-center">
