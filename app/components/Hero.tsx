@@ -8,7 +8,7 @@ export function Hero() {
     return(
         <div className="pt-4">
             <div className="px-[20px]">
-                <h1 className="text-center text-[32px] leading-[40px] font-medium text-[#172026]">
+                <h1 className="text-center text-[32px] leading-[40px] font-medium text-[#172026] lg:text-[40px]">
                     Sonotipos Bioacústicos:
                 </h1>
 
@@ -46,8 +46,8 @@ export function Hero() {
                     </button>
                 </div>
 
-                <div className="relative flex h-full w-full justify-center pt-10">
-                    <div className="absolute flex-col items-center">
+                <div className="flex h-full w-full justify-center pt-10">
+                    <div className="flex-col items-center">
                         <Image src={Colombia} alt="Map"/>
 
                         <div className="flex w-full flex-col items-center">
