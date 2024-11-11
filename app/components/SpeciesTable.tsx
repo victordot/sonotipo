@@ -12,7 +12,7 @@ interface SpeciesTableProps {
   imageSrc: StaticImageData;
   link: string;
   details: string; // Información adicional
-  audioLink: string; // Enlace a los audios de la especie
+   // Enlace a los audios de la especie
 }
 
 export const SpeciesTable: FC<SpeciesTableProps> = ({
@@ -22,7 +22,7 @@ export const SpeciesTable: FC<SpeciesTableProps> = ({
   tipo,
   imageSrc,
   details,
-  audioLink,
+  
 }) => {
   const [showDetails, setShowDetails] = useState(false); // Estado para mostrar detalles
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para mostrar el modal
@@ -67,7 +67,7 @@ export const SpeciesTable: FC<SpeciesTableProps> = ({
             <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-md mt-2">
               <p><strong>Detalles:</strong> {details}</p>
               <div className="mt-4">
-                <Link href={audioLink}>
+                <Link href={"/grabaciones"}>
                   <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
                     Sonotipo
                   </button>

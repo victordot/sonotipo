@@ -35,18 +35,20 @@ export function Hero() {
                     ecosistema.
                 </p>
 
-                <div className="flex w-full pt-8 gap-4 flex-wrap">
+                <div className="flex w-full pt-8 gap-4 flex-wrap justify-center">
                     <Link href={"/ecosistemas"}>
                         <button className="bg-[#FF9913] w-full py-4 px-8 text-white rounded-[4px] text-[18px]">
                             Quiero buscar en una zona geográfica
                         </button>
                     </Link>
                     <Link href={"/especies"}>
-                        <button className="w-full text-[#FF9913] text-[18px] flex items-center justify-center gap-x-4">
-                            Busco una especie particular
-                        <span>
-                            <Image src={Search} alt="Search" width={28} height={28}/>
-                        </span>
+                        <button className="w-full text-[#FF9913] text-[18px] flex items-center justify-between py-4 px-8">
+                            <span className="flex-grow text-center">
+                                Busco una especie particular
+                            </span>
+                            <span>
+                                <Image src={Search} alt="Search" width={28} height={28} />
+                            </span>
                         </button>
                     </Link>
                 </div>
