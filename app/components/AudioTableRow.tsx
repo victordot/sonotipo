@@ -1,7 +1,6 @@
-// AudioTableRow.tsx
-"use client";  // Esto convierte este archivo en un componente de cliente
+"use client";
 
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 
 interface AudioTableRowProps {
   audioName: string;
@@ -13,15 +12,31 @@ interface AudioTableRowProps {
 
 const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat, tipo, audioSrc }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audio] = useState(new Audio(audioSrc));
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    // Crear el objeto Audio solo en el cliente
+    const audioInstance = new Audio(audioSrc);
+    setAudio(audioInstance);
+
+    // Limpiar el objeto Audio al desmontar el componente
+    return () => {
+      if (audioInstance) {
+        audioInstance.pause();
+        setAudio(null);
+      }
+    };
+  }, [audioSrc]); // Solo se ejecuta cuando el audioSrc cambia
 
   const togglePlay = () => {
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play();
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      setIsPlaying(!isPlaying);
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -43,4 +58,5 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
 };
 
 export default AudioTableRow;
+
 
