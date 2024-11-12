@@ -9,6 +9,7 @@ export default nextConfig;
 
 // next.config.js
 module.exports = {
+  basePath: '/sonotipos',
   output: 'export', // Habilita la exportación estática
   images: {
     unoptimized: true, // Desactiva la optimización de imágenes
