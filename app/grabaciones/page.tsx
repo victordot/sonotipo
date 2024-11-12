@@ -9,21 +9,21 @@ export default function Home() {
       description: "Audio de una urraca en su hábitat natural",
       habitat: "Bosques tropicales",
       tipo: "Aves",
-      audioSrc: "../../assets/Audios/Urraca.mp3",
+      audioSrc: "/assets/Audios/Urraca.mp3",
     },
     {
       audioName: "Canto de la Guacamalla",
       description: "Audio de una Guacamalla en su hábitat natural",
       habitat: "Selva",
       tipo: "Aves",
-      audioSrc: "../../assets/Audios/Guacamaya.mp3",
+      audioSrc: "/assets/Audios/Guacamaya.mp3",
     },
     {
       audioName: "Croar de ranita",
       description: "Audio de una Ranita Listada en su hábitat natural",
       habitat: "Selva",
-      tipo: "Aves",
-      audioSrc: "../../assets/Audios/Ranita.wav",
+      tipo: "Reptil",
+      audioSrc: "/assets/Audios/Ranita.wav",
     },
   ];
 

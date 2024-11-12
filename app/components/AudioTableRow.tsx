@@ -33,6 +33,7 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
       if (isPlaying) {
         audio.pause();
       } else {
+        audio.currentTime = 0; // Reiniciar el audio al principio
         audio.play();
       }
       setIsPlaying(!isPlaying);
@@ -58,5 +59,6 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
 };
 
 export default AudioTableRow;
+
 
 
