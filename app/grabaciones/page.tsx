@@ -28,7 +28,7 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="container mx-auto px-4 py-6">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
@@ -37,6 +37,6 @@ export default function Home() {
         <AudioTable audioData={audioData} /> {/* Pasa los datos a AudioTable */}
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
