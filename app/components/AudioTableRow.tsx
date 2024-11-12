@@ -15,7 +15,7 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Crear el objeto Audio solo en el cliente
+    console.log("Cargando audio:", audioSrc); // Agregado para depuración
     const audioInstance = new Audio(audioSrc);
     setAudio(audioInstance);
 
@@ -33,7 +33,6 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
       if (isPlaying) {
         audio.pause();
       } else {
-        audio.currentTime = 0; // Reiniciar el audio al principio
         audio.play();
       }
       setIsPlaying(!isPlaying);
@@ -59,6 +58,3 @@ const AudioTableRow: FC<AudioTableRowProps> = ({ audioName, description, habitat
 };
 
 export default AudioTableRow;
-
-
-
